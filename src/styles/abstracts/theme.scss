@@ -1,0 +1,39 @@
+@use "colors" as c;
+
+@mixin theme($text, $bg, $secondary){
+  background-color: $bg;
+
+  .primary{
+    background-color: $bg;
+  }
+
+  .text{
+    color: $text;
+  }
+
+  .secondary{
+    background-color: $secondary;
+  }
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $text;
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $text;
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: $text;
+  }
+}
+
+.light{
+  @include theme(c.$text-color-light, c.$bg-color-light, c.$secondary-light);
+}
+
+.dark{
+  @include theme(c.$text-color-dark, c.$bg-color-dark, c.$secondary-dark);
+}
+

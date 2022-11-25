@@ -1,0 +1,16 @@
+$bg-color-light: #fafafa;
+$text-color-light: black;
+$secondary-light: white;
+
+$bg-color-dark: #212e37;
+$text-color-dark: #fcffff;
+$secondary-dark: #2b3743;
+
+:export{
+  bgColorLight: $bg-color-light;
+  textColorLight: $text-color-light;
+  secondaryColorLight: $secondary-light;
+  bgColorDark: $bg-color-dark;
+  textColorDark: $text-color-dark;
+  secondaryColorDark: $secondary-dark;
+}

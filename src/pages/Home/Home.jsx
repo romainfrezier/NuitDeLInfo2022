@@ -20,10 +20,7 @@ const Home = () => {
         <main id="home">
 
             <div className="category" id="work">
-                <h1 className="text">{t("work.title")}</h1>
-
                 <motion.div className="categoryContent" variants={downloadVariants} initial="hidden" whileInView="show" viewport={{ once: true }}>
-                    <h2 className="text">{t("work.subtitle")}</h2>
                     <motion.div variants={downloadChildVariants}>
                         <h1 className="text">Mug</h1>
                     </motion.div>
@@ -50,6 +47,12 @@ const Home = () => {
                     </motion.div>
                     <motion.div variants={downloadChildVariants}>
                         <h1 className="text">Branlos</h1>
+                    </motion.div>
+                    <motion.div variants={downloadChildVariants}>
+                        <h1 className="text">SecondDiv</h1>
+                    </motion.div>
+                    <motion.div variants={downloadChildVariants}>
+                        <h1 className="text">SecondDiv</h1>
                     </motion.div>
                     <motion.div variants={downloadChildVariants}>
                         <h1 className="text">SecondDiv</h1>

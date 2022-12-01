@@ -1,5 +1,3 @@
-import LanguageChanger from "../../components/LanguageChanger/LanguageChanger"
-import {useTranslation} from "react-i18next"
 import "../../styles/components/header.scss"
 import {useState} from "react";
 import {Link} from "react-router-dom";
@@ -10,27 +8,18 @@ import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
 
 const Header = () => {
 
-    const { t } = useTranslation()
-
     const [burgerOpen,setBurgerOpen] = useState(false)
 
     return(
         <header className="secondary">
-            <a href="/" className="sideTitle text">{t("header.home")}</a>
+            <a href="/" className="sideTitle text">Home</a>
             <nav id="basicNav">
                 <div className="container">
-                    <a href="#work" className="text">{t("header.work")}</a>
+                    <Link to="/about" className="text">A propos</Link>
                 </div>
                 <div className="container">
-                    <a href="#about" className="text">{t("header.about")}</a>
+                    <Link to="/minijeux" className="text">Mini-jeux</Link>
                 </div>
-                <div className="container">
-                    <a href="#cvContainer" className="text">{t("header.cv")}</a>
-                </div>
-                <div className="container">
-                    <a href="#contact" className="text">{t("header.contact")}</a>
-                </div>
-                <LanguageChanger />
                 <ThemeSwitcher />
             </nav>
 
@@ -42,15 +31,11 @@ const Header = () => {
                 {burgerOpen &&
                     <div className="modal">
                         <div className="container">
-                            <a href="#work" className="burgerNav">{t("header.work")}</a>
+                            <a className="burgerNav">A propos</a>
                         </div>
                         <div className="container">
-                            <a href="#about" className="burgerNav">{t("header.about")}</a>
+                            <a className="burgerNav">Mini-jeux</a>
                         </div>
-                        <div className="container">
-                            <a href="#contact" className="burgerNav">{t("header.contact")}</a>
-                        </div>
-                        <LanguageChanger />
                     </div>
                 }
             </div>

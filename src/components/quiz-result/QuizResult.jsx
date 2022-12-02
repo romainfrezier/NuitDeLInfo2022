@@ -1,4 +1,5 @@
 import "../../styles/components/quizResult.scss"
+import {motion} from "framer-motion";
 import PropTypes from 'prop-types';
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
@@ -235,7 +236,7 @@ const QuizResult = (props) => {
 				<h2 className="text mid-question">Donne une explication à ta réponse !</h2>
 				<TextField
 					id="Explication"
-					label="Expliquation"
+					label="Explication"
 					multiline
 					rows={5}
 					variant="standard"
@@ -245,7 +246,9 @@ const QuizResult = (props) => {
 					required
 					onChange={handleChangeExplanation}
 				/>
-				<Button variant="contained" type="submit">Envoyer</Button>
+				<motion.div id="sendButtonDiv" whileHover={{ x: -600 }}>
+					<Button variant="contained" type="submit">Envoyer</Button>
+				</motion.div>
 			</form>
 			<Dialog
 				open={open}

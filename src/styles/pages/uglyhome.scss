@@ -1,0 +1,154 @@
+*{
+  text-align: left;
+}
+
+#home1{
+  cursor: url('../../assets/pinguin.png'), auto;
+}
+
+p{
+  font-size: max(1.2vw,14px);
+}
+
+.category1{
+  padding:2% 5%;
+}
+
+.categoryContent1{
+  padding:1% 5%;
+}
+
+h1{
+  font-weight: bold;
+  font-size: max(2.5vw,20px);
+}
+
+h2{
+  font-weight: bold;
+  font-size: max(1.5vw,18px);
+}
+
+#subHeader1{
+  display: flex;
+  justify-content: space-between;
+}
+
+#subHeader1 > a {
+  padding: 20px 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: max(10px, 1.25vw);
+}
+
+#ecouterLink1{
+  background-color: blue;
+  &:hover{
+    background-color: red;
+  }
+}
+#informerLink1{
+  background-color: yellow;
+  &:hover{
+    background-color: green;
+  }
+}
+#orienterLink1{
+  background-color: blue;
+  &:hover{
+    background-color: grey;
+  }
+}
+#temoignerLink1{
+  background-color: grey;
+  &:hover{
+    background-color: yellow;
+  }
+}
+#soutenirLink1{
+  background-color: red;
+  &:hover{
+    background-color: pink;
+  }
+}
+#lutterLink1{
+  background-color: purple;
+  &:hover{
+    background-color: gainsboro;
+  }
+}
+
+.partContainer1{
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(2deg);
+}
+
+.partContainer1 > *{
+  width: 50%;
+}
+
+.partContainer1 > div{
+  width: 40%;
+  padding: 2% 5%;
+}
+
+.partContainer1 * {
+  text-align: justify;
+  text-justify: auto;
+}
+
+.partContainer1 p {
+  font-size: max(6px, 1vw);
+  padding: 1% 0;
+}
+
+.partContainer1 a {
+  font-size: max(6px, 1vw);
+}
+
+.partContainer1 li {
+  font-size: max(6px, 1vw);
+  padding: 1% 0;
+}
+
+.partContainer1 h1 {
+  font-size: max(12px, 1.75vw);
+  padding: 0 0 3% 0;
+}
+
+.partContainer1 h2 {
+  font-size: max(8px, 1.3vw);
+  padding: 1% 0;
+}
+
+.partContainer1 h3 {
+  font-size: max(7px, 1.15vw);
+}
+
+.partContainer1 img{
+  width: 150px;
+  rotate: 52deg;
+}
+
+.partContainer1:nth-child(odd){
+  flex-direction: row-reverse;
+}
+
+#fightImage1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+}
+
+#fightImage1 > img{
+  width: auto;
+  height: 50%;
+}

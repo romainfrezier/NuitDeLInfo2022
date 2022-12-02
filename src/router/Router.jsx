@@ -1,8 +1,9 @@
 import {Routes, Route} from "react-router-dom";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Home from "../pages/Home/Home";
-import About from "../pages/About/About";
 import MiniJeux from "../pages/MiniJeux/MiniJeux";
+import Quizz from "../pages/Quizz/Quizz";
+import UglyHome from "../pages/UglyHome/UglyHome";
 import Pendu from "../pages/Pendu/Pendu";
 
 function Router() {
@@ -10,9 +11,10 @@ function Router() {
     return (
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/minijeux" element={<MiniJeux />} />
-            <Route path="/pendu" element={<Pendu />} />
+            <Route path="/challenges/uglyHome" element={<UglyHome />} />
+            <Route path="/minijeux" element={<MiniJeux />}/>
+            <Route path="/minijeux/quizz" element={<Quizz/>}/>
+            <Route path="/minijeux/pendu" element={<Pendu />} />
             <Route path="/*" element={<ErrorPage errorMessage="Error 404"/>} />
             <Route path="/error/" element={<ErrorPage />} />
         </Routes>

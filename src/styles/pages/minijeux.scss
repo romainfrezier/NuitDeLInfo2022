@@ -1,0 +1,26 @@
+#cardContainer{
+  padding: 0 5%;
+  min-height: 84vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10%;
+}
+
+.card{
+  padding: 3%;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 4px black solid;
+  border-radius: 15px;
+  word-break: break-word;
+}
+
+.card * {
+  text-align: center;
+}

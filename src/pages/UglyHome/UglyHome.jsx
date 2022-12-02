@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import "../../styles/pages/home.scss"
+import "../../styles/pages/uglyhome.scss"
 
 import girl from "../../assets/girl-listening-music.webp"
 import information from "../../assets/information.jpg"
@@ -18,28 +18,28 @@ const Home = () => {
     }
 
     const childVariants = {
-        hidden: {opacity: 0, x: -200},
-        show: {opacity: 1, transition: {duration: 0.5}, x:0}
+        hidden: {opacity: 0, x: -200, rotate : '0deg'},
+        show: {opacity: 1, transition: {duration: 0.5}, x:0, rotate: '1080deg'}
     }
 
     const childVariantsRight = {
-        hidden: {opacity: 0, x: 200},
-        show: {opacity: 1, transition: {duration: 0.5}, x:0}
+        hidden: {opacity: 0, x: 200, rotate : '0deg'},
+        show: {opacity: 1, transition: {duration: 0.5}, x:0, rotate: '720deg'}
     }
 
     return(
-        <main id="home">
-            <div id="heroBanner">
-                <div id="subHeader">
-                    <a href="#ecouter" id="ecouterLink" className="text">Écouter</a>
-                    <a href="#informer" id="informerLink" className="text">Informer</a>
-                    <a href="#orienter" id="orienterLink" className="text">Orienter</a>
-                    <a href="#temoigner" id="temoignerLink" className="text">Témoigner</a>
-                    <a href="#soutenir" id="soutenirLink" className="text">Soutenir</a>
-                    <a href="#lutter" id="lutterLink" className="text">Lutter</a>
+        <main id="home1">
+            <div id="heroBanner1">
+                <div id="subHeader1">
+                    <motion.a whileHover={{ rotate: '330deg', scale: 2.5}} href="#ecouter1" id="ecouterLink1" className="text">Écouter</motion.a>
+                    <motion.a whileHover={{ rotate: '330deg', scale: 2.5}} href="#informer1" id="informerLink1" className="text">Informer</motion.a>
+                    <motion.a whileHover={{ rotate: '330deg', scale: 2.5}} href="#orienter1" id="orienterLink1" className="text">Orienter</motion.a>
+                    <motion.a whileHover={{ rotate: '330deg', scale: 2.5}} href="#temoigner1" id="temoignerLink1" className="text">Témoigner</motion.a>
+                    <motion.a whileHover={{ rotate: '330deg', scale: 2.5}} href="#soutenir1" id="soutenirLink1" className="text">Soutenir</motion.a>
+                    <motion.a whileHover={{ rotate: '330deg', scale: 2.5}} href="#lutter1" id="lutterLink1" className="text">Lutter</motion.a>
                 </div>
             </div>
-            <div className="partContainer" id="ecouter">
+            <div className="partContainer1" id="ecouter1">
                 <motion.div variants={variants} initial="hidden" whileInView="show" viewport={{ once: true }}>
                     <motion.h1 variants={childVariants} className="text">Ecouter</motion.h1>
                     <motion.p variants={childVariants} className="text">Sida Info Service est un observateur privilégié de l’évolution des questionnements abordés par les différents publics. Son observatoire a réalisé en 2015 une enquête portant sur l’évolution des questionnements VIH des jeunes entre 2004 et 2014 ? Quelle place occupent aujourd’hui les canaux de communication téléphonique et web dans la prévention contre le VIH/Sida ?</motion.p>
@@ -62,14 +62,14 @@ const Home = () => {
                 </motion.div>
                 <img src={girl}/>
             </div>
-            <motion.div variants={variants} initial="hidden" whileInView="show" viewport={{ once: true }} className="partContainer" id="informer">
+            <motion.div variants={variants} initial="hidden" whileInView="show" viewport={{ once: true }} className="partContainer1" id="informer1">
                 <div>
                     <motion.h1 variants={childVariantsRight} className="text">S'informer</motion.h1>
                     <motion.p variants={childVariantsRight} className="text">Afin de vous informer sur des questions générales, nous vous invitons a jetter un coup d'oeil à la FAQ du site sida-info-service: <a href="https://www.sida-info-service.org/categorie/questions-frequentes/foire-aux-questions-sida/" className="text">Cliquez ici</a></motion.p>
                 </div>
                 <img src={information} />
             </motion.div>
-            <div className="partContainer" id="orienter">
+            <div className="partContainer1" id="orienter1">
                 <motion.div variants={variants} initial="hidden" whileInView="show" viewport={{ once: true }}>
                     <motion.h1 variants={childVariants} className="text">S'orienter</motion.h1>
                     <motion.p variants={childVariants} className="text">Selon les besoins de chacun.e, SIS Association oriente vers les structures les plus adaptées. Tout est mis en œuvre pour que la prise en charge soit la plus efficace possible au travers des réseaux de soins, des actions sociales et des associations de proximité.</motion.p>
@@ -78,7 +78,7 @@ const Home = () => {
                 <img src={orienter}/>
             </div>
 
-            <div className="partContainer" id="temoigner">
+            <div className="partContainer1" id="temoigner1">
                 <motion.div variants={variants} initial="hidden" whileInView="show" viewport={{ once: true }}>
                     <motion.h1 variants={childVariantsRight} className="text">Témoigner</motion.h1>
                     <motion.p variants={childVariantsRight} className="text">Avec trois décennies d’expérience dans la relation d’aide à distance, SIS Association est un témoin privilégié de l’évolution de l’épidémie de VIH, mais aussi des maladies connexes, de la vie intime et de toutes les formes de sexualité des appelants et des appelantes. Les écoutant.e.s recueillent les interrogations, les peurs et les discriminations telles que les vivent nos usager.e.s. Grâce aux entretiens réalisés, l’Observatoire collecte des données quantitatives et qualitatives, tout en préservant l’anonymat des personnes, informant sur l’état et les besoins des populations en matière de santé sexuelle.</motion.p>
@@ -95,7 +95,7 @@ const Home = () => {
                 <img src={talk}/>
             </div>
 
-            <div className="partContainer" id="soutenir">
+            <div className="partContainer1" id="soutenir1">
                 <motion.div variants={variants} initial="hidden" whileInView="show" viewport={{ once: true }}>
                     <motion.h1 variants={childVariants} className="text">Soutenir</motion.h1>
                     <motion.h2 variants={childVariants} className="text">Soutenir un proche</motion.h2>
@@ -114,7 +114,7 @@ const Home = () => {
                 <img src={help} />
             </div>
 
-            <div className="partContainer" id="lutter">
+            <div className="partContainer1" id="lutter1">
                 <motion.div variants={variants} initial="hidden" whileInView="show" viewport={{ once: true }}>
                     <motion.h1 variants={childVariantsRight} className="text">Lutter</motion.h1>
                     <motion.h2 variants={childVariantsRight} className="text">C’est quoi une trithérapie ?</motion.h2>
@@ -166,7 +166,7 @@ const Home = () => {
                     <motion.p variants={childVariantsRight} className="text">Vous souhaitez contacter des juristes ? Appelez Sida Info Droit au 0 810 636 636 (0,06€/min + prix de l'appel) les lundi de 17 h à 21 h, les vendredi de 9 h 30 à 13 h 30 (anonyme et confidentiel)</motion.p>
                     <motion.p variants={childVariantsRight} className="text">L’anonymat et la confidentialité des échanges sont garantis à chaque entretien. Le prix de la communication est celui d’un appel métropolitain depuis un poste fixe.</motion.p>
                 </motion.div>
-                <div id="fightImage">
+                <div id="fightImage1">
                     <img src={fight}/>
                 </div>
             </div>

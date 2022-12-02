@@ -1,0 +1,54 @@
+.title {
+    text-align: center;
+}
+
+.question {
+    text-align: center;
+}
+
+.choices {
+    padding: 3%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    place-items: center;
+
+    *{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+.validation, .next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonIsGreen {
+    background-color: green;
+}
+
+.buttonIsRed {
+    background-color: red;
+}
+
+.game{
+    min-height: 84vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.next{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.next > p{
+    padding: 1% 15%;
+    text-align: center;
+}

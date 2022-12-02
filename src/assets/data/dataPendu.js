@@ -39,4 +39,32 @@ export const dataPendu = [
     word: "TRITHERAPIE",
     description: "La trithérapie est un terme qui désigne l'association de trois molécules contre le VIH afin de renforcer la puissance du traitement. Il n'existe pas une seule trithérapie mais différentes trithérapies qui associent différents types de molécules.",
   },
+  {
+    word: "OBSERVATOIRE",
+    description: "Grâce aux entretiens réalisés, l’Observatoire collecte des données quantitatives et qualitatives, tout en préservant l’anonymat des personnes, informant sur l’état et les besoins des populations en matière de santé sexuelle.",
+  },
+  {
+    word: "SIDA",
+    description: "Le syndrome d'immunodéficience acquise (sida) s'installe quand le système immunitaire est débordé. Les personnes sont alors sujettes aux infections opportunistes (tuberculose, pneumopathies, zona…) ainsi qu'à certains cancers.",
+  },
+  {
+    word: "IMMUNITE",
+    description: "En biologie et en médecine, l'immunité, est la capacité d'un organisme à se défendre contre des substances étrangères et des agents infectieux. C'est l'une des principales lignes de défenses biologiques.",
+  },
+  {
+    word: "CONTRACEPTION",
+    description: "La contraception est l'emploi de moyens visant à empêcher qu'un rapport sexuel entraîne une grossesse. Elle est définie par l'Organisation mondiale de la santé comme étant « l'utilisation d’agents, de dispositifs, de méthodes ou de procédures pour diminuer la probabilité de conception ou l’éviter ».",
+  },
+  {
+    word: "CEGIDD",
+    description: "Les Centres gratuits d’information, de dépistage et de diagnostic (CeGIDD) des infections par les virus de l’immunodéficience humaine, des hépatites virales et des infections sexuellement transmissibles ont été mis en place à partir de janvier 2016, pour remplacer les CDAG (centres de dépistages anonymes et gratuits). ",
+  },
+  {
+    word: "DEPISTAGE",
+    description: "Le dépistage, en médecine, consiste à rechercher une ou plusieurs maladies ou anomalies dites « à risques » chez les individus d'une population donnée. Ces investigations sont suivies ou non de consultations médicales, d'examens cliniques et de traitements.",
+  },
+  {
+    word: "SIS",
+    description: "Sida Info Service, (SIS-association), est une association française qui met à disposition du public plusieurs lignes téléphoniques, ainsi que des canaux numériques, permettant d’obtenir des renseignements sur les questions relatives au VIH au SIDA, ainsi que sur les IST, mais également sur les hépatites, les questions liées à l'orientation sexuelle et d'identité de genre.",
+  },
 ];

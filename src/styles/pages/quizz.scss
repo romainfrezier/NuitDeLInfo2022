@@ -1,0 +1,27 @@
+.title {
+    text-align: center;
+}
+
+.question {
+    text-align: center;
+}
+
+.choices {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.validation, .next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonIsGreen {
+    background-color: green;
+}
+
+.buttonIsRed {
+    background-color: red;
+}
+

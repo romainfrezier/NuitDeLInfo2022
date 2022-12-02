@@ -6,7 +6,7 @@ const CheckBox = ({ onChange, initialState }) => {
     const [checked, setChecked] = useState(false)
 
     useEffect( () => {
-        console.log(initialState())
+        // console.log(initialState())
         initialState() ? setChecked(true) : setChecked(false)
     },[])
 

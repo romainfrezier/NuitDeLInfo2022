@@ -1,0 +1,92 @@
+#sectionPendu {
+    margin: 0 5% 0 5%;
+}
+
+#title {
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+
+#subtitle {
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+#boxArrayWord {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 60px 0;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#boxArrayWord .hideWord {
+    width: 50px;
+    text-align: center;
+    vertical-align: middle;
+    visibility: hidden;
+}
+
+#boxArrayWord .boxTypoHideWord {
+    margin: 0 10px 0 10px;
+    border-bottom: solid;
+}
+
+#displayLetter {
+    visibility: visible !important;
+}
+
+#boxChoiceLetter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#titleChoiceLetter {
+    margin-bottom: 20px;
+    font-size: 2.3rem;
+}
+
+#textFieldChoiceLetter {
+    width: 40px;
+    text-align: center;
+}
+
+#buttonChoiceLetter {
+    margin-top: 10px;
+    width: 100px;
+}
+
+#boxImagePendu {
+    display: flex;
+    margin-top: 30px;
+}
+
+.imagePendu {
+    max-width: 70%;
+    max-height: 30vh;
+    margin: auto;
+}
+
+.typoResultPendu {
+    margin: 30px 0 20px 0 !important;
+    text-align: center;
+}
+
+#boxResultPendu {
+    margin: 50px 0 50px 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#boxButtonreplay {
+    display: flex;
+    margin: 30px 0 10px 0;
+}
+
+#buttonReplay {
+    margin: auto
+}

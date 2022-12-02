@@ -23,3 +23,120 @@ h2{
   font-weight: bold;
   font-size: max(1.5vw,18px);
 }
+
+#subHeader{
+  display: flex;
+  justify-content: space-between;
+}
+
+#subHeader > a {
+  padding: 20px 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: max(10px, 1.25vw);
+}
+
+#ecouterLink{
+  background-color: rgba(129,167,255, 0.8);
+  &:hover{
+    background-color: rgba(129,167,255, 0.5);
+  }
+}
+#informerLink{
+  background-color: rgba(254,165,243, 0.8);
+  &:hover{
+    background-color: rgba(254,165,243, 0.5);
+  }
+}
+#orienterLink{
+  background-color: rgba(255,253,136, 0.8);
+  &:hover{
+    background-color: rgba(255,253,136, 0.5);
+  }
+}
+#temoignerLink{
+  background-color: rgba(129,167,255, 0.8);
+  &:hover{
+    background-color: rgba(129,167,255, 0.5);
+  }
+}
+#soutenirLink{
+  background-color: rgba(254,165,243, 0.8);
+  &:hover{
+    background-color: rgba(254,165,243, 0.5);
+  }
+}
+#lutterLink{
+  background-color: rgba(255,253,136, 0.8);
+  &:hover{
+    background-color: rgba(255,253,136, 0.5);
+  }
+}
+
+.partContainer{
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+}
+
+.partContainer > *{
+  width: 50%;
+}
+
+.partContainer > div{
+  width: 40%;
+  padding: 2% 5%;
+}
+
+.partContainer * {
+  text-align: justify;
+  text-justify: auto;
+}
+
+.partContainer p {
+  font-size: max(6px, 1vw);
+  padding: 1% 0;
+}
+
+.partContainer a {
+  font-size: max(6px, 1vw);
+}
+
+.partContainer li {
+  font-size: max(6px, 1vw);
+  padding: 1% 0;
+}
+
+.partContainer h1 {
+  font-size: max(12px, 1.75vw);
+  padding: 0 0 3% 0;
+}
+
+.partContainer h2 {
+  font-size: max(8px, 1.3vw);
+  padding: 1% 0;
+}
+
+.partContainer h3 {
+  font-size: max(7px, 1.15vw);
+}
+
+.partContainer:nth-child(odd){
+  flex-direction: row-reverse;
+}
+
+#fightImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+}
+
+#fightImage > img{
+  width: auto;
+  height: 50%;
+}

@@ -11,7 +11,7 @@ const MiniJeux = () => {
 			<div className="card secondary">
 				<h1 className="text">Jeu du pendu</h1>
 				<p className="text">Jouer au jeu du pendu tout en apprenant de nouveaux mots relatif au sida !</p>
-				<Button variant="contained">Jouer</Button>
+				<Button variant="contained" onClick={() => { navigate("/minijeux/pendu")}}>Jouer</Button>
 			</div>
 			<div className="card secondary">
 				<h1 className="text">Quizz</h1>

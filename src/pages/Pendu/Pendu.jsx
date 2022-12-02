@@ -134,6 +134,9 @@ const Pendu = () => {
 				<Typography className="text" variant="h5" color="initial">Le mot était: <span className="bold">{wordChoose.word}</span></Typography>
 				<Typography className="text" variant="h5" color="initial">Définition:</Typography>
 				<Typography className="text" variant="body1" color="initial">{wordChoose.description}</Typography>
+				<Box id="boxButtonreplay">
+					<Button id="buttonReplay" variant="contained" color="primary" onClick={() => window.location.reload(false)}>Rejouer</Button>
+				</Box>
 			</Box>
 			)}
 		</Box>

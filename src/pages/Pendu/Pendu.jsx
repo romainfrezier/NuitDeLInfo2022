@@ -132,7 +132,7 @@ const Pendu = () => {
 			{(win || loose) && (
 			<Box id="boxResultPendu">
 				<Typography className="text" variant="h5" color="initial">Le mot était: <span className="bold">{wordChoose.word}</span></Typography>
-				<Typography className="text" variant="h5" color="initial">Description:</Typography>
+				<Typography className="text" variant="h5" color="initial">Définition:</Typography>
 				<Typography className="text" variant="body1" color="initial">{wordChoose.description}</Typography>
 			</Box>
 			)}

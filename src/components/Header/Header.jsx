@@ -15,9 +15,6 @@ const Header = () => {
             <a href="/" className="sideTitle text">Home</a>
             <nav id="basicNav">
                 <div className="container">
-                    <Link to="/about" className="text">A propos</Link>
-                </div>
-                <div className="container">
                     <Link to="/minijeux" className="text">Mini-jeux</Link>
                 </div>
                 <ThemeSwitcher />
@@ -31,11 +28,9 @@ const Header = () => {
                 {burgerOpen &&
                     <div className="modal">
                         <div className="container">
-                            <a className="burgerNav">A propos</a>
-                        </div>
-                        <div className="container">
                             <a className="burgerNav">Mini-jeux</a>
                         </div>
+                        <ThemeSwitcher />
                     </div>
                 }
             </div>

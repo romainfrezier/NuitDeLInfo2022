@@ -10,7 +10,6 @@ function Router() {
     return (
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
             <Route path="/minijeux" element={<MiniJeux />}/>
             <Route path="/minijeux/quizz" element={<Quizz/>}/>
             <Route path="/*" element={<ErrorPage errorMessage="Error 404"/>} />

@@ -1,7 +1,6 @@
 import {Routes, Route} from "react-router-dom";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Home from "../pages/Home/Home";
-import About from "../pages/About/About";
 import MiniJeux from "../pages/MiniJeux/MiniJeux";
 import Quizz from "../pages/Quizz/Quizz";
 

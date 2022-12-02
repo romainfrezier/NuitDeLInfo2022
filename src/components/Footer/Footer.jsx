@@ -10,7 +10,7 @@ const Footer = () => {
     return(
         <footer>
             <div id="copyrightAndTerms" className="secondary">
-                <p className="text">Copyright</p>
+                <p className="text">&copy; 2022, Les grosses BREL - Nuit de l'info 2022</p>
             </div>
         </footer>
     )

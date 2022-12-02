@@ -57,7 +57,7 @@ const Quizz = () => {
 	const showChoices = () => {
 		return (displayedQuestion.choices.map((choice) => (
 			<>
-				<li><Button onClick={() => {selectChoice(choice)}} className="choice">{choice}</Button></li>
+				<li><Button variant="contained" onClick={() => {selectChoice(choice)}} className="choice">{choice}</Button></li>
 			</>
 		)))
 	}
@@ -71,13 +71,14 @@ const Quizz = () => {
 
 	const checkChoice = () => {
 		//check if the choice is valid
-		if (indexDisplayedQuestion == 10){
+		if (indexDisplayedQuestion === 10){
 			setIsFinished(true)
 		}
 		else {
 			if (selectedChoice != null){
-				if (selectedChoice == displayedQuestion.answer){
+				if (selectedChoice === displayedQuestion.answer){
 					//display green the choice
+
 					setScore(score + 1)
 				}
 				else {
@@ -110,23 +111,24 @@ const Quizz = () => {
 					{
 						!isFinished ?
 							<div className="game">
-								<h2 className="title">Quizz</h2>
+								<h2 className="title text">Quizz</h2>
 								<LinearProgress variant="determinate" value={nbQuestionsAnswered * 10} />
-								<h3 className="question">{displayedQuestion.question}</h3>
+								<h3 className="question text">{displayedQuestion.question}</h3>
 								<ul className="choices">
 									{showChoices()}
 								</ul>
 								{isAnswered ?
 									<>
 										<div className="next">
+											<p className="text">La réponse est: {displayedQuestion.answer}</p>
 											<p className="text">{displayedQuestion.explanation}</p>
-											<Button onClick={() => nextQuestion()}>Suivant</Button>
+											<Button variant="contained" onClick={() => nextQuestion()}>Suivant</Button>
 										</div>
 									</>
 									: (selectedChoice &&
 										<>
 											<div className="validation">
-												<Button onClick={() => {checkChoice()}}>Valider</Button>
+												<Button variant="contained" onClick={() => {checkChoice()}}>Valider</Button>
 											</div>
 										</>
 									)
@@ -134,12 +136,7 @@ const Quizz = () => {
 							</div> :
 							<QuizResult value={score}></QuizResult>
 						}
-
-
-
-
 				</>
-
 			}
 		</>
 	)

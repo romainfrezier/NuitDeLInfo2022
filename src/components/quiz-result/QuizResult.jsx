@@ -153,10 +153,10 @@ const QuizResult = (props) => {
 	return (
 		<div className="result-container">
 			<h1 className="text">Resultat</h1>
-			<CircularProgressWithLabel value={props.value}></CircularProgressWithLabel>
+			<CircularProgressWithLabel value={props.value*10}></CircularProgressWithLabel>
 			<h2 className="text result-message">{message}</h2>
 			<Stack spacing={5} direction="row" className="button-play">
-				<Button variant="contained" onClick={() => {navigate('/minijeux/quizz')}}>Rejouer</Button>
+				<Button variant="contained" onClick={() => window.location.reload(false)}>Rejouer</Button>
 				<Button variant="contained" onClick={() => {navigate('/minijeux')}}>Jouer à un autre jeux</Button>
 			</Stack>
 			<h2 className="text form-header">Vous voulez ajouter une question ?</h2>

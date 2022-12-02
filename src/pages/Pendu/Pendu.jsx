@@ -85,7 +85,7 @@ const Pendu = () => {
 	return(
 		<Box id="sectionPendu">
 			<Typography className="text" id="title" variant="h1" color="initial">Pendu</Typography>
-			<Typography className="text" id="subtitle" variant="h2" color="initial">Le mot à trouver est en rapport avec les maladies sexuellement transmissible et l'éducation à la sexualité.</Typography>
+			<Typography className="text" id="subtitle" variant="h2" color="initial">Le mot à trouver est en rapport avec les maladies sexuellement transmissible et l'éducation sexuelle.</Typography>
 			<Box id="boxImagePendu">
 				{countFailure === 0 && (
 					<img src={penduStep1} alt="Jeux du pendu" className="imagePendu"/>

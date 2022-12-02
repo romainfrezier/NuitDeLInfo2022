@@ -2,12 +2,13 @@ import { useEffect, useState } from "react"
 import "../../styles/pages/quizz.scss" 
 import { Button, LinearProgress } from "@mui/material"
 import axios from "axios"
+import QuizResult from "../../components/quiz-result/QuizResult";
 
 const Quizz = () => {
 
 	const [dataQuestions, setDataQuestions] = useState(null)
 	const [nbQuestionsAnswered, setNbQuestionsAnswered] = useState(0)
-	const [start, setStart] = useState(null)
+	const [isFinished, setIsFinished] = useState(false)
 	const [score, setScore] = useState(0)
 	const [isMount, setIsMount] = useState(false)
 	const [questions, setQuestions] = useState([])
@@ -25,7 +26,7 @@ const Quizz = () => {
 			selectQuestions(10,quizzes.data)
 		})
 
-	}, [start])
+	}, [])
 
 	useEffect(() => {
 		if (questions.length >= 10){
@@ -71,7 +72,7 @@ const Quizz = () => {
 	const checkChoice = () => {
 		//check if the choice is valid
 		if (indexDisplayedQuestion == 10){
-			//display stats
+			setIsFinished(true)
 		}
 		else {
 			if (selectedChoice != null){
@@ -105,29 +106,40 @@ const Quizz = () => {
 	return(
 		<>
 			{isMount &&
-				<div className="game">
-					<h2 className="title">Quizz</h2>
-					<LinearProgress variant="determinate" value={nbQuestionsAnswered * 10} />
-					<h3 className="question">{displayedQuestion.question}</h3>
-					<ul className="choices">
-						{showChoices()}
-					</ul>
-					{isAnswered ?
-						<>
-							<div className="next">
-								<p className="text">{displayedQuestion.explanation}</p>
-								<Button onClick={() => nextQuestion()}>Suivant</Button>
-							</div>
-						</>
-						: (selectedChoice &&
-						<>
-							<div className="validation">
-								<Button onClick={() => {checkChoice()}}>Valider</Button>
-							</div>
-						</>
-						)
-					}
-				</div>
+				<>
+					{
+						!isFinished ?
+							<div className="game">
+								<h2 className="title">Quizz</h2>
+								<LinearProgress variant="determinate" value={nbQuestionsAnswered * 10} />
+								<h3 className="question">{displayedQuestion.question}</h3>
+								<ul className="choices">
+									{showChoices()}
+								</ul>
+								{isAnswered ?
+									<>
+										<div className="next">
+											<p className="text">{displayedQuestion.explanation}</p>
+											<Button onClick={() => nextQuestion()}>Suivant</Button>
+										</div>
+									</>
+									: (selectedChoice &&
+										<>
+											<div className="validation">
+												<Button onClick={() => {checkChoice()}}>Valider</Button>
+											</div>
+										</>
+									)
+								}
+							</div> :
+							<QuizResult value={score}></QuizResult>
+						}
+
+
+
+
+				</>
+
 			}
 		</>
 	)

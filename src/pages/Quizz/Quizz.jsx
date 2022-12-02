@@ -53,12 +53,10 @@ const Quizz = () => {
 			setQuestions((oldQuestions) => [...oldQuestions, questions[indexChosen]])
 		}
 	}
-
 	const showChoices = () => {
 		return (displayedQuestion.choices.map((choice) => (
-
 			<>
-				<li><Button  style={!isAnswered ? {backgroundColor: "blue"} : (choice === displayedQuestion.answer) ? {backgroundColor: "green"}: {backgroundColor: "red"}} variant="contained" onClick={() => {selectChoice(choice)}}>{choice}</Button></li>
+				<li><Button  style={!isAnswered ? {backgroundColor: "#2196f3"} : (choice === displayedQuestion.answer) ? {backgroundColor: "green"}: {backgroundColor: "red"}} variant="contained" onClick={() => {selectChoice(choice)}}>{choice}</Button></li>
 			</>
 		)))
 	}

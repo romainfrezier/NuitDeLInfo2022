@@ -112,7 +112,7 @@ const Quizz = () => {
 							<div className="game">
 								<h2 className="title text">Quizz</h2>
 								<LinearProgress variant="determinate" value={nbQuestionsAnswered * 10} />
-								<h3 className="question text">{displayedQuestion.question}</h3>
+								<h3 className="question text">{displayedQuestion.question !== undefined ? displayedQuestion.question : ""}</h3>
 								<ul className="choices">
 									{showChoices()}
 								</ul>
